@@ -1,14 +1,14 @@
 from src.leilao.dominio import Usuario, Lance, Leilao, Avaliador
 
-edson = Usuario('edson')
-bel = Usuario('bel')
+mark = Usuario('mark')
+clay = Usuario('clay')
 
-lance_edson = Lance(edson, 100)
-lance_bel = Lance(bel, 160)
+lance_mark = Lance(mark, 100)
+lance_clay = Lance(clay, 160)
 
 leilao = Leilao('Celular')
-leilao.lances.append(lance_edson)
-leilao.lances.append(lance_bel)
+leilao.lances.append(lance_mark)
+leilao.lances.append(lance_clay)
 
 for lance in leilao.lances:
     print(f'O usuário {lance.usuario.nome} deu um lance de {lance.valor}')
